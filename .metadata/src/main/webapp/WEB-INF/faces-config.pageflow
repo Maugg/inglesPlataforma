@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15398102830670" configfile="/ingles/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="122" y="178" id="pf15398106981231" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15398106981232 pf15398108777794" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pagina1.xhtml" x="338" y="178" id="pf15398106981233" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15398106981232" path="/pagina1.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="maestro.xhtml" id="pf15398108777805" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15398108777794" path="/maestro.xhtml"/>
+  <links id="pf15398106981232" target="pf15398106981233" source="pf15398106981231" outcome="pagina1"/>
+  <links id="pf15398108777794" target="pf15398108777805" source="pf15398106981231" outcome="maestro"/>
+</pageflow:Pageflow>
