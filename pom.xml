@@ -36,13 +36,13 @@
       <dependency>
           <groupId>org.jboss.spec.javax.faces</groupId>
           <artifactId>jboss-jsf-api_2.2_spec</artifactId>
-          <scope>privided</scope>
+          <scope>provided</scope>
       </dependency>
 
       <dependency>
           <groupId>javax.enterprise</groupId>
           <artifactId>cdi-api</artifactId>
-          <scope>privided</scope>
+          <scope>provided</scope>
       </dependency>
 
       <dependency>
