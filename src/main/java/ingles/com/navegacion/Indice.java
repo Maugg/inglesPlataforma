@@ -15,7 +15,7 @@ public class Indice {
     }
 
     public String ejecucionPrueba() {
-        //codigo java
+
         return "pruebas";
     }
 
