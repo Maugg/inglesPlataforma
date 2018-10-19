@@ -12,7 +12,13 @@
     <h:form id="formulario">
         <h:outputLabel for="nombre" value="Nombre:"/>
         <h:inputText id="nombre" value="#{formulario.usuario.nombre}"/>
+         <h:outputLabel for="apellido" value="Apellido:"/>
+        <h:inputText id="apellido" value="#{formulario.usuario.apellido}"/>
+        <h:outputLabel for="edad" value="Edad:"/>
+        <h:inputText id="edad" value="#{formulario.usuario.edad}"/>
         <h:message for="nombre" errorStyle="color: red"/>
+        <h:message for="edad" errorStyle="color: yellow"/>
+        
         <h:commandButton value="Enviar" action="#{formulario.guardarNombre}"/>
     </h:form>
 </h:body>

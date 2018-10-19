@@ -19,8 +19,9 @@ public class Usuario {
     @Size(max = 100, min = 3)
     private String apellido;
 
-    @Min(5)
-    @Max(12)
+    @Min(value = 5,message = "La edad debe ser mayor a 5")
+    @Max(value = 12,message="Debe ser menor de 12")
+   
     private int edad;
 
     public Usuario() {
@@ -81,14 +82,22 @@ public class Usuario {
         return Objects.hash(id, nombre, apellido, edad);
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Usuario{");
-        sb.append("id=").append(id);
-        sb.append(", nombre='").append(nombre).append('\'');
-        sb.append(", apellido='").append(apellido).append('\'');
-        sb.append(", edad=").append(edad);
-        sb.append('}');
-        return sb.toString();
-    }
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Usuario [id=");
+		builder.append(id);
+		builder.append(", nombre=");
+		builder.append(nombre);
+		builder.append(", apellido=");
+		builder.append(apellido);
+		builder.append(", edad=");
+		builder.append(edad);
+		builder.append("]");
+		return builder.toString();
+	}
+
+   
+   
+  
 }
