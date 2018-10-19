@@ -16,13 +16,13 @@
         </navigation-case>
 
         <navigation-case>
-            <from-outcome>formulariomemo</from-outcome>
+            <from-outcome>datos</from-outcome>
             <to-view-id>/formulariomemo.xhtml</to-view-id>
+            <if>#{indice.valor &lt; 1}</if>
 		</navigation-case>
          <navigation-case>
             <from-outcome>datos</from-outcome>
             <to-view-id>/datos.xhtml</to-view-id>
-
         </navigation-case>
     </navigation-rule>
     
