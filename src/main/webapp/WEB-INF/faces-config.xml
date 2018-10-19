@@ -14,9 +14,15 @@
             <from-outcome>formulario</from-outcome>
             <to-view-id>/formulario.xhtml</to-view-id>
         </navigation-case>
+<<<<<<< HEAD
         <navigation-case>
             <from-outcome>formulariomemo</from-outcome>
             <to-view-id>/formulariomemo.xhtml</to-view-id>
+=======
+         <navigation-case>
+            <from-outcome>datos</from-outcome>
+            <to-view-id>/datos.xhtml</to-view-id>
+>>>>>>> d839cfecefea22a5bab02eeb4995cad36ceb8bd3
         </navigation-case>
     </navigation-rule>
     
