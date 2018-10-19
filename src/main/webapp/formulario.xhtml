@@ -11,7 +11,8 @@
 <h:body>
     <h:form id="formulario">
         <h:outputLabel for="nombre" value="Nombre:"/>
-        <h:inputText id="nombre" value="#{formulario.nombre}"/>
+        <h:inputText id="nombre" value="#{formulario.usuario.nombre}"/>
+        <h:message for="nombre" errorStyle="color: red"/>
         <h:commandButton value="Enviar" action="#{formulario.guardarNombre}"/>
     </h:form>
 </h:body>

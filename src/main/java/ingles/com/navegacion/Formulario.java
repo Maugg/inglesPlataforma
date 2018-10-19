@@ -1,5 +1,8 @@
 package ingles.com.navegacion;
 
+import ingles.com.bean.Usuario;
+
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import java.util.logging.Logger;
@@ -10,19 +13,24 @@ public class Formulario {
 
     private Logger logger = Logger.getLogger(getClass().getName());
 
-    private String nombre;
+    private Usuario usuario;
+
+    @PostConstruct
+    public void init() {
+        usuario = new Usuario();
+    }
 
     public String guardarNombre() {
         //guardamnos en BD
-        logger.info(nombre);
+        logger.info(usuario.toString());
         return "confirmar";
     }
 
-    public String getNombre() {
-        return nombre;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 }
