@@ -2,7 +2,12 @@ package ingles.com.navegacion;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
+
+import ingles.com.bean.Usuario;
+import ingles.com.bean.UsuarioMemo;
+
 import java.util.logging.Logger;
+import javax.annotation.PostConstruct;
 
 @RequestScoped
 @Named
@@ -10,41 +15,20 @@ public class FormularioMemo {
 
     private Logger logger = Logger.getLogger(getClass().getName());
 
-    private String nombre;
-    private String apellido;
-    private String edad;
-
-    public String guardarDatos() {
-        //guardamnos en BD
-        logger.info(nombre);
-        logger.info(apellido);
-        logger.info(edad);
-        return "confirmarmemo";
+    private UsuarioMemo usuarioMemo;
+    
+    @PostConstruct
+    public void init() {
+        usuarioMemo = new UsuarioMemo();
     }
 
-	public String getNombre() {
-		return nombre;
+	public UsuarioMemo getUsuarioMemo() {
+		return usuarioMemo;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setUsuarioMemo(UsuarioMemo usuarioMemo) {
+		this.usuarioMemo = usuarioMemo;
 	}
-
-	public String getApellido() {
-		return apellido;
-	}
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
-
-	public String getEdad() {
-		return edad;
-	}
-
-	public void setEdad(String edad) {
-		this.edad = edad;
-	}
-
+    
     
 }
