@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15398102830670" configfile="/ingles/src/main/webapp/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="122" y="1138" id="pf15398106981231" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf15398106981232 pf15398108777794 pf15398119696900 pf15399816467204 pf15399816467205 pf15399816467206" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="122" y="1522" id="pf15398106981231" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15398106981232 pf15398108777794 pf15398119696900 pf15399816467204 pf15399816467206 pf15403004408530 pf15403006288554" path="/index.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="pagina1.xhtml" x="338" y="178" id="pf15398106981233" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15398106981232" path="/pagina1.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="maestro.xhtml" x="338" y="562" id="pf15398108777805" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15398108777794" path="/maestro.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="Alumno.xhtml" x="338" y="946" id="pf15398119696911" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf15398119696900" path="/Alumno.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="formulario.xhtml" x="338" y="1330" id="pf15399816467207" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15399816467204" path="/formulario.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="formulariomemo.xhtml" x="338" y="1714" id="pf15399816467208" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf15399816467205" path="/formulariomemo.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="datos.xhtml" x="338" y="2098" id="pf15399816467209" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf15399816467206" path="/datos.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="datos.xhtml" x="338" y="2098" id="pf15399816467209" referenceLink="//@navigationRule.0/@navigationCase.4/@toViewId|" inlinks="pf15399816467206" path="/datos.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="formulariomemo2.xhtml" x="338" y="2482" id="pf15403004408542" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf15403004408530" path="/formulariomemo2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="formulariomemo.xhtml" id="pf15403006288565" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf15403006288554" path="/formulariomemo.xhtml"/>
   <links id="pf15398106981232" target="pf15398106981233" source="pf15398106981231" outcome="pagina1"/>
   <links id="pf15398108777794" target="pf15398108777805" source="pf15398106981231" outcome="maestro"/>
   <links id="pf15398119696900" target="pf15398119696911" source="pf15398106981231" outcome="Alumno"/>
   <links id="pf15399816467204" target="pf15399816467207" source="pf15398106981231" outcome="formulario"/>
-  <links id="pf15399816467205" target="pf15399816467208" source="pf15398106981231" outcome="datos"/>
   <links id="pf15399816467206" target="pf15399816467209" source="pf15398106981231" outcome="datos"/>
+  <links id="pf15403004408530" target="pf15403004408542" source="pf15398106981231" outcome="formulariomemo2"/>
+  <links id="pf15403006288554" target="pf15403006288565" source="pf15398106981231" outcome="datos"/>
 </pageflow:Pageflow>
